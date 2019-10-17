@@ -10,7 +10,33 @@
 </head>
 
 <body>
-
+    <form id='new-user'>
+        <label> Your Name:
+            <input type="text"> 
+        </label>
+        <label> Your occupation:
+            <input type="text">
+        </label>
+        <fieldset>
+            <legend> Choose your ship: </legend>
+            <label> 
+                <input type="radio" name="ship" value="Fighter" required>
+                <img src="">
+            </label>
+            <label>
+                <input type="radio" name="ship" value="Scout" required>
+                <img src="">
+            </label>
+            <label>
+                <input type="radio" name="ship" value="Transport" required>
+                <img src="">
+            </label>
+            <label>
+                <input type="radio" name="ship" value="Cruiser" required>
+                <img src="">
+            </label>
+        </fieldset>
+    </form>
     <script type="module" src="app.js"></script>
 </body>
 

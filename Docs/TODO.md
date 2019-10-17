@@ -1,4 +1,4 @@
-METADATA
+METADATA - DONE
     ID
     TITLE
     MAP
@@ -13,7 +13,7 @@ METADATA
         CONSEQUENCES
 
 USER INFO
-    TDD
+    TDD - DONE
         FORMDATA
         COMPLETED: {};
     SAVES TO LOCAL STORAGE
