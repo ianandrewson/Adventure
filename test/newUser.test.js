@@ -8,7 +8,7 @@ test('should return a user Object of specified form', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const formData = new FormData();
-    formData.set('name', 'Ian')
+    formData.set('name', 'Ian');
     formData.set('occupation', 'Water Reclaimation Specialist');
     formData.set('ship', 'Scout');
 

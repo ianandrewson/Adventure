@@ -9,5 +9,6 @@ export const newUser = (formData) => {
         credits: 0,
         completed: {}
     };
+    localStorage.setItem(user.name, JSON.stringify(user));
     return user;
-}
+};
