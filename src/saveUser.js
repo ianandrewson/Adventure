@@ -1,3 +1,3 @@
-// export const saveUser = (user) => {
-
-// };
+export const saveUser = (user) => {
+    localStorage.setItem(user.name, JSON.stringify(user));
+};

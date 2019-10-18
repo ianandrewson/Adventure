@@ -1,2 +1,3 @@
 import './newUser.test.js';
-//import './saveUser.test';
+import './generateQuestLink.test.js';
+import './renderChoice.test.js';

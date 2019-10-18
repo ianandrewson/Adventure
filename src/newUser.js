@@ -1,3 +1,5 @@
+import { saveUser } from './saveUser.js';
+
 export const newUser = (formData) => {
     const user = {
         name: formData.get('name'),
@@ -9,6 +11,7 @@ export const newUser = (formData) => {
         credits: 0,
         completed: {}
     };
-    localStorage.setItem(user.name, JSON.stringify(user));
+    saveUser(user);
+    localStorage.setItem('current-user', `${user.name}`);
     return user;
 };
