@@ -8,7 +8,7 @@ const test = QUnit.test;
 test('should return an element to render to screen', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const expected = '<label><input type="radio" name="choice" value="accelerate"></input><p>"Hit the thrusters to accelerate towards the base and charge your weapons to open fire on the courtyard"</p></label>';
+    const expected = '<label><input type="radio" name="choice" value="accelerate"><p>Hit the thrusters to accelerate towards the base and charge your weapons to open fire on the courtyard</p></label>';
     
     //Act 
     // Call the function you're testing and set the result to a const
