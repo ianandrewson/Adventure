@@ -1,6 +1,7 @@
 import { quests } from '../data/quest-data.js';
 import { findById } from '../src/findById.js';
 import { renderChoice } from '../src/renderChoice.js';
+import { renderQuestResult } from '../src/renderQuestResult.js';
 
 const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
@@ -19,7 +20,7 @@ currentQuest.choices.forEach(choice => {
 
 document.getElementById('submit-choice').addEventListener('click', () => {
     const choiceMade = document.querySelector('input:checked').value;
-    choiceArea.classList.add('hide-me');
+    //choiceArea.classList.add('hide-me');
     document.getElementById('submit-choice').classList.add('hide-me');
-    renderResult(choiceMade);
+    document.getElementById('result-area').appendChild(renderQuestResult(findById(choiceMade, currentQuest.choices)));
 });

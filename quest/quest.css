@@ -1,3 +1,7 @@
 .hide-me {
     visibility: hidden;
 }
+
+label {
+    display: flex;
+}
