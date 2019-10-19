@@ -10,7 +10,6 @@ test('Should return quest link', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const quest = quests[0];
-    console.log(quest);
     const expected = '<a class="quest" href="../quest/?id=mars" style="top: 23%; left: 18%;">Explore Mars</a>';
 
 
