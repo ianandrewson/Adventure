@@ -12,7 +12,7 @@ const mars = {
     choices: [{
         id: 'accelerate',
         description: 'Hit the thrusters to accelerate towards the base and charge your weapons to open fire on the courtyard',
-        result: '', 
+        result: 'Soldiers fall to the ground, writhing in agony as your plasma turret tears off limbs and ruptures space suits. The captain manages to get a message out to the Federation of Terrestrial Governments before succumbing to her wounds. The outpost\'s automated defenses manage to give you a glancing shot, slightly damaging your port-side wing, but it\'s nothing too serious. You scour the base for supplies, filling your hull with military grade weapons before retuning to space.',
         consequences: [{
             fuel: '-10',
             health: '-20',

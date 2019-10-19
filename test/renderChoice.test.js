@@ -5,7 +5,7 @@ import { quests } from '../data/quest-data.js';
 
 const test = QUnit.test;
 
-test('should return an element to render to screen', function(assert) {
+test('should return a Quest choice to render to screen', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const expected = '<label><input type="radio" name="choice" value="accelerate"><p>Hit the thrusters to accelerate towards the base and charge your weapons to open fire on the courtyard</p></label>';

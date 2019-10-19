@@ -14,5 +14,12 @@ document.getElementById('title').textContent = currentQuest.title;
 document.getElementById('description').textContent = currentQuest.description;
 const choiceArea = document.getElementById('choice-area');
 currentQuest.choices.forEach(choice => {
-    renderChoice(choice);
+    choiceArea.appendChild(renderChoice(choice));
+});
+
+document.getElementById('submit-choice').addEventListener('click', () => {
+    const choiceMade = document.querySelector('input:checked').value;
+    choiceArea.classList.add('hide-me');
+    document.getElementById('submit-choice').classList.add('hide-me');
+    renderResult(choiceMade);
 });
