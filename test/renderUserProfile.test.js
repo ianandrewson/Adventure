@@ -19,13 +19,13 @@ test('Should return quest link', function(assert) {
         completed: {}
     };
 
-    const expected = '<section><p id="name">Ian</p><p id="occupation">"Water Reclaimation Specialist"</p><p id="ship">Scout</p><p id="health">50</p><p id="fuel">60</p><p id="standing">0</p><p id="credits">0</p></section>';
+    const expected = '<section><p id="name">Ian</p><p id="occupation">Water Reclaimation Specialist</p><p id="ship">Scout</p><p id="health">50</p><p id="fuel">60</p><p id="standing">0</p><p id="credits">0</p></section>';
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const result = renderUserProfile();
+    const result = renderUserProfile(user);
 
     //Assert
     // Make assertions about what is expected valid result
-    assert.deepEqual(result, expected);
+    assert.deepEqual(result.outerHTML, expected);
 });
