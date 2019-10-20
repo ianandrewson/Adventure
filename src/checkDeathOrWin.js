@@ -1,5 +1,6 @@
 export const checkDeathOrWin = (user) => {
     
+
     const youWon = function(userCompletedObject) {
         let keyNum = 0;
         for (const key in userCompletedObject) {
@@ -9,14 +10,10 @@ export const checkDeathOrWin = (user) => {
         if (keyNum === 3){
             return true;
         }};
-        
-    let newWindowLocation = window.location.href;
-    if (user.health === 0) {
-        newWindowLocation = '../results/';
-        return newWindowLocation;
-    } else if (youWon(user.completed)){
-        newWindowLocation = '../results/';
-        return newWindowLocation;
-    }
     
+    if (user.health === 0) {
+        return true;
+    } else if (youWon(user.completed)){
+        return true;
+    }
 };
