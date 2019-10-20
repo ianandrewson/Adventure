@@ -19,10 +19,11 @@ currentQuest.choices.forEach(choice => {
 });
 
 document.getElementById('submit-choice').addEventListener('click', () => {
-    const choiceMade = document.querySelector('input:checked').value;
-    //choiceArea.classList.add('hide-me');
     document.getElementById('submit-choice').classList.add('hide-me');
+    
+    const choiceMade = document.querySelector('input:checked').value;
     document.getElementById('result-area').appendChild(renderQuestResult(findById(choiceMade, currentQuest.choices)));
+
     const returnButton = document.createElement('button');
     returnButton.id = 'return-button';
     returnButton.textContent = 'Return to map';
