@@ -9,7 +9,7 @@ test('should return a Quest choice to render to screen', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     localStorage.clear();
-    localStorage.setItem('currentUser', 'Ian');
+    localStorage.setItem('current-user', 'Ian');
     let storedUser = {
         name: 'Ian',
         occupation: 'Water Reclaimation Specialist',
@@ -22,11 +22,11 @@ test('should return a Quest choice to render to screen', function(assert) {
     };
     localStorage.setItem('Ian', JSON.stringify(storedUser));
 
-    const expected = { name: 'Ian', occipation: 'Water Reclaimation Specialist', ship: 'Scout', health: 30, fuel: 50, standing: -20, credits: 500, completed: { mars: true } };
+    const expected = { name: 'Ian', occupation: 'Water Reclaimation Specialist', ship: 'Scout', health: 30, fuel: 50, standing: -20, credits: 500, completed: { mars: true } };
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const result = updatePlayerStats(quests[0].choices[0]);
+    const result = updatePlayerStats(quests[0].choices[0], 'mars');
 
     //Assert
     // Make assertions about what is expected valid result

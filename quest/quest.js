@@ -26,7 +26,7 @@ document.getElementById('submit-choice').addEventListener('click', () => {
     const choiceMade = findById(choice, currentQuest.choices);
     document.getElementById('result-area').appendChild(renderQuestResult(choiceMade));
 
-    //CALL updatePlayerStats HERE 
+    updatePlayerStats(choiceMade, questId); 
 
     const returnButton = document.createElement('button');
     returnButton.id = 'return-button';
