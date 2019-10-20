@@ -23,4 +23,11 @@ document.getElementById('submit-choice').addEventListener('click', () => {
     //choiceArea.classList.add('hide-me');
     document.getElementById('submit-choice').classList.add('hide-me');
     document.getElementById('result-area').appendChild(renderQuestResult(findById(choiceMade, currentQuest.choices)));
+    const returnButton = document.createElement('button');
+    returnButton.id = 'return-button';
+    returnButton.textContent = 'Return to map';
+    document.getElementById('result-area').appendChild(returnButton);
+    document.getElementById('return-button').addEventListener('click', () =>{
+        window.location = '../map/';
+    });
 });
