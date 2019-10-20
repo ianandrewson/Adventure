@@ -5,18 +5,18 @@ import { checkDeathOrWin } from '../src/checkDeathOrWin.js';
 
 const test = QUnit.test;
 
-test('Should return a new window location to results for loss', function(assert) {
+test('Should return a new window location to results for win', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const user = {
         name: 'Ian',
         occupation: 'Water Reclaimation Specialist',
         ship: 'Scout',
-        health: 0,
+        health: 60,
         fuel: 60,
         standing: 0,
         credits: 0,
-        completed: {}
+        completed: { mars: true, venus: true, moon: true }
     };
     const expected = '../results/';
 
@@ -31,14 +31,14 @@ test('Should return a new window location to results for loss', function(assert)
     assert.equal(result, expected);
 });
 
-test('Should return a new window location to results for win', function(assert) {
+test('Should return a new window location to results for loss', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const user = {
         name: 'Ian',
         occupation: 'Water Reclaimation Specialist',
         ship: 'Scout',
-        health: 20,
+        health: 0,
         fuel: 60,
         standing: 0,
         credits: 0,
