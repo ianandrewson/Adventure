@@ -3,6 +3,9 @@ import { findById } from '../src/findById.js';
 import { renderChoice } from '../src/renderChoice.js';
 import { renderQuestResult } from '../src/renderQuestResult.js';
 import { updatePlayerStats } from '../src/updatePlayerStats.js';
+import { loadProfile } from '../src/loadProfile.js';
+
+loadProfile();
 
 const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
