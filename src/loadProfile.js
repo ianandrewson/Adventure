@@ -6,4 +6,6 @@ export const loadProfile = () => {
 
     const userProfileArea = document.getElementById('user-profile-area');
     userProfileArea.appendChild(renderUserProfile(user));
+
+    return user;
 };

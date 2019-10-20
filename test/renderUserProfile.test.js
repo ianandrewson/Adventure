@@ -5,7 +5,7 @@ import { renderUserProfile } from '../src/renderUserProfile.js';
 
 const test = QUnit.test;
 
-test('Should return quest link', function(assert) {
+test('Should return html for user profile', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     let user = {

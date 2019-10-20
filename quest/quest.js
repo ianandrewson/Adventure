@@ -11,7 +11,7 @@ const searchParams = new URLSearchParams(window.location.search);
 const questId = searchParams.get('id');
 const currentQuest = findById(questId, quests);
 if (currentQuest === null) {
-    window.location = '../';
+    window.location = '../map/';
 }
 
 document.getElementById('title').textContent = currentQuest.title;
