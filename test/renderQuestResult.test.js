@@ -13,7 +13,6 @@ test('should return the quest choice result elements to render to screen', funct
     //Act 
     // Call the function you're testing and set the result to a const
     const result = renderQuestResult(quests[0].choices[0]);
-    console.log(result);
 
     //Assert
     // Make assertions about what is expected valid result
