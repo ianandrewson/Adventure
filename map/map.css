@@ -12,3 +12,8 @@ nav {
     display: inline;
     border: 1px solid black;
 }
+
+.hide-me {
+    display: none;
+}
+

@@ -9,13 +9,11 @@ export const renderQuestResult = choice => {
 
     const choiceConse = choice.consequences;
     for (const key in choiceConse) {
-        if (choiceConse.hasOwnProperty(key)) {
-            const stat = key;
-            const change = choiceConse[key];
-            const consequence = document.createElement('p');
-            consequence.textContent = stat + ': ' + change;
-            result.appendChild(consequence);
-        }
+        const stat = key;
+        const change = choiceConse[key];
+        const consequence = document.createElement('p');
+        consequence.textContent = stat + ': ' + change;
+        result.appendChild(consequence);
     }
     return result;
 };

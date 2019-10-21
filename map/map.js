@@ -14,3 +14,13 @@ const mapArea = document.getElementById('map');
 quests.forEach(quest => {
     mapArea.appendChild(generateQuestLink(quest));
 });
+
+document.querySelectorAll('a').forEach(link => {
+    const completed = user.completed;
+    for (const key in completed) {
+        if (key === link.id){
+            link.classList.add('hide-me');
+        }
+    }
+});
+
