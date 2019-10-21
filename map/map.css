@@ -1,0 +1,19 @@
+#map {
+    width: 900px;
+    height: 700px;
+    border:  1px solid black;
+}
+
+a {
+    position: absolute;
+}
+
+nav {
+    display: inline;
+    border: 1px solid black;
+}
+
+.hide-me {
+    display: none;
+}
+

@@ -10,7 +10,44 @@
 </head>
 
 <body>
-
+    <label>
+        Load a previous game by entering your username:
+        <input  id="load-user" type="text">
+        <button id="load">Load Profile</button>
+    </label>
+    <p id="no-load"></p>
+    <a href=""></a>
+    <br>
+    <br>
+    <p>Or make a new profile: </p>
+    <form id ='new-user'>
+        <label> Your name:
+            <input name='name' type="text"> 
+        </label>
+        <label> Your occupation:
+            <input name='occupation' type="text">
+        </label>
+        <fieldset>
+            <legend> Choose your ship: </legend>
+            <label> 
+                <input type="radio" name="ship" value="Fighter" required>
+                <img src="">
+            </label>
+            <label>
+                <input type="radio" name="ship" value="Scout" required>
+                <img src="">
+            </label>
+            <label>
+                <input type="radio" name="ship" value="Transport" required>
+                <img src="">
+            </label>
+            <label>
+                <input type="radio" name="ship" value="Cruiser" required>
+                <img src="">
+            </label>
+        </fieldset>
+        <button type="submit">Begin Your Quest</button>
+    </form>
     <script type="module" src="app.js"></script>
 </body>
 
